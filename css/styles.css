@@ -1,11 +1,190 @@
-body {
-	font-family: Roboto;
-}
-
 /* Палитра цветов
 #212121 - цвет ссылок хеддера, заголовков h2, h3
 #757575 - цвет параграфов, ссылок на почту и телефон (в футере +60% прозрачность)
 #FFFFFF - h1, текст кнопок
-#2196F3 - (Web - часть лого) фон кнопок, акцент на ссылках
+#2196F3 - (Web - часть лого) фон кнопок, акцент на ссылках */
 
- */
+:root {
+	--title-text-color: #212121;
+	--text-color: #757575;
+	--accent-color: #2196F3;
+	--white-site-color: #FFFFFF;
+}
+
+body {
+	font-family: Roboto;
+	color: var(--title-text-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+	font-style:normal;
+}
+
+.logo {
+	color: #000000;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 2.58;
+}
+
+.nav-link {
+	color: var(--title-text-color);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--accent-color);
+}
+
+.nav-contacts {
+	color: var(--text-color);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+}
+
+.nav-contacts:hover,
+.nav-contacts:focus {
+	color: var(--accent-color);
+}
+
+.accent {
+	color: var(--accent-color);
+}
+
+/* Hero section */
+
+.hero-title {
+	color: var(--white-site-color);
+	background-color: gray; - временно для видности
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+}
+
+.hero-btn {
+	color: var(--white-site-color);
+	background-color: var(--accent-color);
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87;
+}
+
+/* Features section */
+
+.features-list-title {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.33;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+}
+
+.features-list-text {
+	color: var(--text-color);
+	font-size: 14px;
+	line-height: 2;
+}
+
+.section-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.17;
+}
+
+/* Employee section */
+
+.employee-list-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.58;
+}
+
+.employee-text {
+	color: var(--text-color);
+	font-size: 16px;
+	line-height: 1.18;
+}
+
+.footer {
+	background-color: #2F303A;
+}
+
+.logo-footer {
+	color: var(--white-site-color);
+	background-color: #2F303A;  -  временно для видности!
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.19;
+}
+
+.address-link {
+	color: var(--white-site-color);
+	font-weight: normal;
+}
+
+.footer-link {
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: normal;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+	color: var(--accent-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+	color: var(--accent-color);
+}
+
+
+/* css portfolio */
+
+.btn {
+	color: var(--title-text-color);
+	background-color: #F5F4FA;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	border: 0;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--white-site-color);
+	background-color: var(--accent-color);
+}
+
+.project-title {
+	color: var(--title-text-color);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 2;
+}
+
+.project-text {
+	color: var(--text-color);
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 1.87;
+}
